@@ -34,7 +34,7 @@ public class Main {
         Transferencia transaccion = new Transferencia();
         transaccion.setTipo(TipoTransferencia.TRANSFERENCIA);
         transaccion.setMonto(monto);
-        transaccion.setFecha(new Date()); // <- AÑADIR ESTA LÍNEA
+        transaccion.setFecha(new Date());
         transaccion.setCuentaOrigen(cuentas.get(origen));
         transaccion.setCuentaDestino(cuentas.get(destino));
 
