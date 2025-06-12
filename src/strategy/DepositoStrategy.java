@@ -16,10 +16,8 @@ public class DepositoStrategy implements Strategy{
             return;
         }
 
-        // En depósito, puede no haber cuenta de origen
         transferencia.getCuentaDestino().acreditar(transferencia.getMonto());
 
-        // Puedes opcionalmente setear una fecha si aún no se ha hecho
         if (transferencia.getFecha() == null) {
             transferencia.setFecha(new java.util.Date());
         }
